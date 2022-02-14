@@ -28,7 +28,7 @@
       <div class="infoContainer">
       <div class="main">
         <div class="contact">
-          <form action="">
+          <form onsubmit="sendEmail()">
             <h3>Let's Connect</h3>
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Email Id" required>
@@ -39,5 +39,22 @@
       </div>
     </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "keshavagarwal903@gmail.com",
+    Password : "Sweta@12",
+    To : 'keshavagarwal903@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "Name: " + document.getElementById("name").value + "<br> Email: " + document.getElementById("email").value
+     + "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message send successfully")
+);
+      }
+    </script>
   </body>
 </html>
