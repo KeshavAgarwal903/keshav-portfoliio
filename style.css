@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+/* Home page CCS start  */
 
 *{
     margin: 0;
@@ -115,7 +121,12 @@
 .content h2{
     margin-top: 6px;
 }
-.contact{
+
+/* Hpme page CSS end  */
+
+/* Contact form CSS start */
+
+/* .contact{
     margin-top: -140px;
     width: 100%;
     height: 100vh;
@@ -153,17 +164,30 @@ form button{
     font-size: 18px;
     /* border: 0;
     outline: none; */
-    cursor: pointer;
+    /* cursor: pointer; */
     /* width: 150px;
     margin: 20px auto 0;
     border-radius: 20px; */
+ 
+
+/* Contact from CSS end  */
+
+/* Contact form CSS new start  */
+
+.sidebar{
+    width: 225px;
+}
+.contactForm{
+    font-family: 'Fira Sans', sans-serif
+}
+.contactForm h1{
+    font-family: 'Source Code Pro', monospace;
 }
 
 
 
 
-
-
+/* Contact form CSS new end  */
 
 
 

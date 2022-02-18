@@ -25,36 +25,25 @@
           </ul>
         </nav>
       </div>
-      <div class="infoContainer">
-      <div class="main">
-        <div class="contact">
-          <form onsubmit="sendEmail()">
-            <h3>Let's Connect</h3>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Email Id" required>
-            <textarea id="message" rows="10" placeholder="How can we help you ?" required></textarea>
-            <button type="submit">Submit</button>
+    </div>
+        <div class="contactForm">
+          <h1>Contact me for work/general enquries</h1>
+          <form>
+            <div class="mb-3">
+              <label for="clientname" class="form-label">Your Name</label>
+              <input type="password" class="form-control" id="clientname">
+            </div>
+            <div class="mb-3">
+              <label for="clientemail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="isclient">
+              <label class="form-check-label" for="isclient">I want you to work on a project with me. </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
-      </div>
-    </div>
-    </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail(){
-        Email.send({
-    Host : "smtp.gmail.com",
-    Username : "keshavagarwal903@gmail.com",
-    Password : "Sweta@12",
-    To : 'keshavagarwal903@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "This is the subject",
-    Body : "Name: " + document.getElementById("name").value + "<br> Email: " + document.getElementById("email").value
-     + "<br> Message: " + document.getElementById("message").value
-}).then(
-  message => alert("Message send successfully")
-);
-      }
-    </script>
   </body>
 </html>
