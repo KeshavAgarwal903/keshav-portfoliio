@@ -13,7 +13,8 @@
   </head>
   <body>
     <!-- body  -->
-    <div class="container">
+    
+    <div class="container " style="float: left;">
       <div class="sidebar">
         <nav>
           <ul>
@@ -26,7 +27,10 @@
         </nav>
       </div>
     </div>
-        <div class="contactForm">
+
+  <!-- Contact from start -->
+
+        <div class="contactForm" style="float: right;">
           <h1>Contact me for work/general enquries</h1>
           <form>
             <div class="mb-3">
@@ -38,12 +42,22 @@
               <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
-            <div class="mb-3 form-check">
+            <div class="mb-3">
+              <label for="clientemail" class="form-label">Enquiry</label>
+              <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+            
+            </div>
+            <div class="mb-3" id="form-check">
               <input type="checkbox" class="form-check-input" id="isclient">
               <label class="form-check-label" for="isclient">I want you to work on a project with me. </label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="buttons">
+            <button  type="submit" class="send">Submit</button>
+          </div>
           </form>
         </div>
+
+<!-- Contact from end -->
+
   </body>
 </html>
